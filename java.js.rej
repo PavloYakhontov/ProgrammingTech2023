@@ -1,0 +1,4 @@
+diff a/java.js b/java.js	(rejected hunks)
+@@ -0,0 +1 @@
++console.log('Hello Universe')
+\ No newline at end of file
