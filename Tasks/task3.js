@@ -1,22 +1,22 @@
 //№1 Яке останнє значення буде виведено на екран? Чому?
 
-let i = 3;
+let i = 3
 while (i) {
   alert( i-- );
 } // 1
 
 //№2 Яке значення виведе цикл "while"?
 
-let i = 0;
-while (++i < 5) alert( i ); // 4
+let i = 0
+while (++i < 5) alert( i ) // 4
 
-let i = 0;
-while (i++ < 5) alert( i ); // 5
+let i = 0
+while (i++ < 5) alert( i ) // 5
 
 //№3 Яке значення виведе цикл "for"?
 
-for (let i = 0; i < 5; i++) alert( i ); // 0 - 4
-for (let i = 0; i < 5; ++i) alert( i ); // 0 - 4
+for (let i = 0; i < 5; i++) alert( i ) // 0 - 4
+for (let i = 0; i < 5; ++i) alert( i ) // 0 - 4
 
 //№4 Виведіть парні числа від 2 до 10, використовуючи цикл for.
 
@@ -34,7 +34,7 @@ let a;
 while (true) {
     a = prompt()
     if (a > 100 || a == '')
-        break;
+        break
 }
 
 // №7 Вивести прості числа
