@@ -1,0 +1,8 @@
+let ask = prompt('Яка “офіційна” назва JavaScript?')
+if (ask === 'ECMAScript') {
+    alert('Правильно!');
+}
+
+else {
+    alert('Не знаєте? ECMAScript!');
+}
