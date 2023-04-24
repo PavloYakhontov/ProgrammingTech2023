@@ -1,0 +1,60 @@
+.game-page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative; 
+}
+
+.background {
+  position: absolute; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../components/assets/images/1.png'); 
+  background-size: contain;/*calc(100% - 900px) 100%;*/
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.bird {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 30px;
+  background-image: url("../components/assets/images/bird2.png");
+  background-size: cover;
+  /*animation: bird-animation 3000ms infinite;*/
+}
+
+
+.pipetop{
+  position: relative;
+  background-image: url("../components/assets/images/pipe-green.png");
+  transform: rotate(180deg);
+  background-size: cover;
+}
+.pipe{
+  position:relative;
+  background-image: url("../components/assets/images/pipe-green.png");;
+  background-size: cover;
+}
+
+
+.score{
+    left: 50%;
+    top: 20%;
+    font-size: 30px;
+    position: absolute;
+    color: white;
+}
+
+.back{
+  background-color: rgb(41, 39, 39);
+  width: 100%;
+  height: 753px;
+}
