@@ -12,6 +12,7 @@ import setRender from './index.js';
 import PhoneBook from './telefonchiki';
 import { redirect } from 'react-router';
 import {HiUserRemove} from 'react-icons/hi';
+import {Navigate} from "react-router-dom";
 
 //const email="sukablya1111t@gmail.com"
 //const password="1231456111"
@@ -53,6 +54,7 @@ class Singup extends React.Component {
 
     constructor(props) {
         super(props);
+        this.clicked = false;
         this.state = {value: ''};
         this.email="";
         this.password="";
@@ -68,12 +70,12 @@ logloglog() {console.log(this.email, this.password)};
 znazenya(e) {this.email = e.target.value};
 znazenya1(e) {this.password = e.target.value};
 
-regestration () 
+async regestration () 
 { 
-  createUserWithEmailAndPassword(this.auth, this.email, this.password)
-  .then((userCredential) => {const user = userCredential.user;})
+  await createUserWithEmailAndPassword(this.auth, this.email, this.password)
+  .then((userCredential) => {const user = userCredential.user; if (this.state.clicked) { this.setState({ clicked: false }) } else { this.setState({ clicked: true }) };})
   .catch((error) => {const errorCode = error.code;const errorMessage = error.message;
-  console.log("aaa"); Regestration2()})
+  console.log("aaa");})
 }
 
 
@@ -86,11 +88,28 @@ render()
 const { navigation } = this.props;
 return(
     
-        <div class="container-xxl flex-fill flex-grow"> 
-        <Old/>
+        <div> 
+          <div class="" > {this.state.clicked && <Navigate replace={true} to={"/login"} state={this.state}/>}</div>
+           <nav class="navbar bg-dark fixed-top" data-bs-theme="dark">
+                    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                        <div class="container-fluid">
+                            <a class="navbar-brand" href="#">Тонко та зі смаком</a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="/login">В логін</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </nav>
         <form className="form-1">
 <p className="field">
-    <input type="text" name="login" placeholder="Логин или емэйл" onChange={(e) => (this.znazenya(e), this.logloglog())}/>
+    <input type="text" name="login" placeholder="Емейл" onChange={(e) => (this.znazenya(e), this.logloglog())}/>
     <i class="icon-user icon-large"></i>
 </p>
     <p class="field">
@@ -98,7 +117,7 @@ return(
     <i class="icon-lock icon-large"></i>
 </p>      
 <p className="submit">
-    <button type="button" name="submit" onClick={() => {this.regestration(); redirect("/main")} }><i className="icon-arrow-right icon-large" ></i>Creata account</button>
+    <button type="button" name="submit" onClick={() => {this.regestration()} }><i className="icon-arrow-right icon-large" ></i>Creata account</button>
 </p>
 </form>
         </div>
