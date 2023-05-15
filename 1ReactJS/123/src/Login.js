@@ -17,10 +17,6 @@ import {Navigate} from "react-router-dom";
 //const email="sukablya1111t@gmail.com"
 //const password="1231456111"
 
-function Old(){
-    const navigate = useNavigate();
-            navigate(`/main`);
-}
 
 function Loggin (auth, email, password)  
 {
@@ -34,16 +30,6 @@ function Loggin (auth, email, password)
   });
 }
 
-function Old1(){
-  const navigate = useNavigate();
-  return <div>
-      <button className='button_navigate_login'
-        onClick={async event => {
-          navigate(`/main`);
-        }}
-      >Go to singup</button>
-  </div>;
-}
 
 function LogIn1(props){
   const navigate = useNavigate();

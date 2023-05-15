@@ -33,22 +33,6 @@ function Regestration () {
         >Create account</button>
     </div>; 
   }
-  function Regestration2 () {
-    const navigate = useNavigate();
-    navigate(`/login`);
-    redirect(`/login`);
-  }
-
-function Old(){
-    const navigate = useNavigate();
-    return <div>
-        <button className='button_navigate_login'
-          onClick={async event => {
-            navigate(`/login`);
-          }}
-        >Go to login page</button>
-    </div>;
-}
 
 class Singup extends React.Component {
 
