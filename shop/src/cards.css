@@ -1,0 +1,58 @@
+section{
+    width: 80%;
+    margin: auto;
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    margin-left: 190px;
+}
+
+.cards{
+    width: 250px;
+    padding: 20px;
+}
+
+.cards:hover{
+    cursor: pointer;
+}
+
+.image_box img{
+    width: 250px;
+    height: 400px;
+    
+}
+
+.details p:nth-child(1){
+    font-weight: bold;
+}
+
+.details p:nth-child(2){
+    color: rgb(175, 173, 173);
+    font-size: 0.8em;
+}
+
+.details p:nth-child(3){
+    font-weight: bold;
+    color: rgb(208, 206, 206);
+    
+}
+
+.details button{
+    padding: 5px 10px;
+    border: none;
+    font-weight: bold;
+    background-color: greenyellow;
+    outline: none;
+    border-radius: 2%;
+    cursor: pointer;
+    
+}
+
+.details button:hover{
+    background-color: rgb(119, 179, 29);
+ }
+
+.nazva{
+    color: white;
+}

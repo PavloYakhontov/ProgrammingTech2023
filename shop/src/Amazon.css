@@ -1,0 +1,13 @@
+.warning{
+    height: 40px;
+    width: 250px;
+    position: fixed;
+    right: 0;
+    top: 25%;
+    background-color: red;
+    font-size: 1.1rem;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+}
