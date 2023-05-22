@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2048</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" type="module"></script>
+    <script src="app.js" type="module"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="score">Score: 0</div>
+
+    <div class="top-right">
+      <button id="LoginButton" onclick="ShowLoginForm()" style="width:auto;">Login</button>
+      <button id="RegisterButton" onclick="ShowRegisterForm()" style="width:auto;">Register</button>
+      <button id="SignOutButton" onclick="SignOut()" style="width:auto;">Sign Out</button>
+    </div>
+
+
+    <div id="login" class="modal"></div>
+    <div id="register" class="modal"></div>
+
+    <div id="scoreboard">
+      <!-- <div style="display: table-row;"> -->
+        <div id="header">
+          <h1>Ranking</h1>
+        </div>
+        <div id="leaderboard" style="margin-right: 10px;">
+          <table id="scores">
+          </table>
+        <!-- </div> -->
+      </div>
+    </div>
+
+    <div id="game-board" style="margin-left: 10px;">
+
+    </div>
+
+
+
+  </body>
+
+</html>
