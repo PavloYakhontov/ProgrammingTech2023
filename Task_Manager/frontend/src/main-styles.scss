@@ -1,0 +1,34 @@
+//тут ми зберігаємо глобальні стилі та змінюємо значення змінних
+
+//import fonts (lato and nunito)
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700|Nunito:400,700');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Roboto&display=swap');
+
+$turquoise: #44ddd0;
+$green: #27d7a1;
+$light-green:#45f69e;
+$dark-green: rgb(0,100,80);
+
+$light: #f8f8f8;
+
+//Update bulba's global variables
+$family-sans-serif: "Nunito", sans-serif;
+$primary:$green;
+ 
+$link: $light-green;
+
+//Update some of bulma's component variables
+
+$control-border-width: 2px;
+$input-border-color: transparent;
+$input-shadow: none;
+
+// Set custom global styles (will be applied the whole app)
+
+html {
+    background: linear-gradient(to right top, $turquoise, $green);
+}
+
+html, body{
+    height:100%;
+}
