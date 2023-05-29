@@ -1,0 +1,124 @@
+<section class="section-hero overlay inner-page bg-image" style="background-image: url('assets/images/hero_1.jpg');" id="home-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7">
+        <h1 class="text-white font-weight-bold">Post A Job</h1>
+        <div class="custom-breadcrumbs">
+          <a href="#">Home</a> <span class="mx-2 slash">/</span>
+          <span class="text-white"><strong>Post a Job</strong></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="site-section">
+  <div class="container">
+
+    <div class="row align-items-center mb-5">
+      <div class="col-lg-8 mb-4 mb-lg-0">
+        <div class="d-flex align-items-center">
+          <div>
+            <h2>Post A Job</h2>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="row">
+          <div class="col">
+            <a (click)="CreateNewPost()" class="btn btn-block btn-primary btn-md text-white">Save Job</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mb-5">
+      <div class="col-lg-12">
+        <form class="p-4 p-md-5 border rounded" method="post">
+          <h3 class="text-black mb-5 border-bottom pb-2">Job Details</h3>
+        
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="text" class="form-control" id="email" placeholder="you@yourdomain.com" [(ngModel)]="model.email" name="email" />
+          </div>
+          <div class="form-group">
+            <label for="job-title">Job Title</label>
+            <input type="text" class="form-control" id="job-title" placeholder="Product Designer" [(ngModel)]="model.jobTitle" name="jobTitle" />
+          </div>
+          <div class="form-group">
+            <label for="job-location">Location</label>
+            <input type="text" class="form-control" id="job-location" placeholder="e.g. New York" [(ngModel)]="model.location" name="location" />
+          </div>
+
+          <div class="form-group">
+            <label for="job-type">Job Type</label>
+            <input type="text" class="form-control" id="job-type" placeholder="Job Type" [(ngModel)]="model.jobType" name="jobType" />
+          </div>
+
+          <div class="form-group">
+            <label for="vacancy">Vacancy</label>
+            <input type="text" class="form-control" id="vacancy" placeholder="At least 20" [(ngModel)]="model.vacancy" name="vacancy" />
+          </div>
+
+          <div class="form-group">
+            <label for="experience">Experience</label>
+            <input type="text" class="form-control" id="experience" placeholder="Experience" [(ngModel)]="model.experience" name="experience" />
+          </div>
+
+          <div class="form-group">
+            <label for="salary">Salary</label>
+            <input type="text" class="form-control" id="salary" placeholder="Salary" [(ngModel)]="model.salary" name="salary" />
+          </div>
+
+          <div class="form-group">
+            <label for="gender">Gender</label>
+            <input type="text" class="form-control" id="gender" placeholder="Gender" [(ngModel)]="model.gender" name="gender" />
+          </div>
+
+          <div class="form-group">
+            <label for="applicationDeadline">Application Deadline</label>
+            <input type="date" class="form-control" id="applicationDeadline" placeholder="Select Application Deadline" [(ngModel)]="model.applicationDeadline" name="applicationDeadline" />
+          </div>
+
+          <div class="form-group">
+            <label for="job-description">Job Description</label>
+            <div class="editor" id="editor-1">
+              <p>Write Job Description!</p>
+            </div>
+          </div>
+
+
+          <h3 class="text-black my-5 border-bottom pb-2">Company Details</h3>
+          <div class="form-group">
+            <label for="company-name">Company Name</label>
+            <input type="text" class="form-control" id="company-name" placeholder="e.g. New York" [(ngModel)]="model.companyName" name="companyName">
+          </div>
+
+          <div class="form-group">
+            <label for="job-description">Company Description (Optional)</label>
+            <div class="editor" id="editor-2">
+              <p>Description</p>
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label for="company-website">Website (Optional)</label>
+            <input type="text" class="form-control" id="company-website" placeholder="https://" [(ngModel)]="model.website" name="website"/>
+          </div>
+        </form>
+      </div>
+
+     
+    </div>
+    <div class="row align-items-center mb-5">
+      
+      <div class="col-lg-4 ml-auto">
+        <div class="row">
+          <div class="col-6">
+            <a (click)="CreateNewPost()" class="btn btn-block btn-primary btn-md text-white">Save Job</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,13 @@
+@import 'vendor/css/custom-bs.css';
+@import 'vendor/css/jquery.fancybox.min.css';
+@import 'vendor/css/bootstrap-select.min.css';
+@import 'vendor/fonts/icomoon/style.css';
+@import 'vendor/fonts/line-icons/style.css';
+/* @import 'vendor/css/owl.carousel.min.css'; */
+@import 'vendor/css/animate.min.css';
+@import 'vendor/css/style.css';
+@import url('vendor/css/quill.snow.css');
+
+#toast-container>div {
+  opacity: 1;
+}

@@ -1,0 +1,39 @@
+<app-homebanner></app-homebanner>
+<app-stats></app-stats>
+<section class="site-section">
+  <div class="container">
+
+    <div class="row mb-5 justify-content-center">
+      <div class="col-md-7 text-center">
+        <h2 class="section-title mb-2">{{totalItems}} Job Listed</h2>
+      </div>
+    </div>
+    <!--  -->
+    <ul class="job-listings mb-5">
+      <li class="job-listing d-block d-sm-flex pb-3 pb-sm-0 align-items-center" *ngFor="let post of posts | paginate: {itemsPerPage: pageSize, currentPage: page, totalItems: totalItems}">
+        <a [routerLink]="['/post-card', post._id]"></a>
+
+        <div class="job-listing-about d-sm-flex custom-width w-100 justify-content-between mx-4">
+          <div class="job-listing-position custom-width w-50 mb-3 mb-sm-0">
+            <h2>{{post.jobTitle}}</h2>
+            <strong>{{post.companyName}}</strong>
+          </div>
+          <div class="job-listing-location mb-3 mb-sm-0 custom-width w-25">
+            <span class="icon-room"></span> {{post.location}}
+          </div>
+          <div class="job-listing-meta">
+            <span class="badge badge-primary">{{post.jobType}}</span>
+          </div>
+        </div>
+        
+      </li>
+
+    </ul>
+    <div class="has-text-centered">
+      <pagination-controls (pageChange)="pageChange($event)"></pagination-controls>
+  </div>
+
+
+  </div>
+</section>
+
