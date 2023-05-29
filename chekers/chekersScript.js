@@ -257,6 +257,9 @@ window.onload = function () {
       }
     },
 
+  }
+
+
   Board.initalize();
   //ми клікаємо на елемент з класом .piece
   $('.piece').on("click", function () {//$(селектор).on(подія, функція обробки);
