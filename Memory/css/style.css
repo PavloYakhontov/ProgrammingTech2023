@@ -1,0 +1,163 @@
+@import url('winner.css');
+
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    background-image: url(https://phonoteka.org/uploads/posts/2021-04/1619515939_3-phonoteka_org-p-zadnii-fon-dlya-platformera-3.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+
+body {
+    font-family: Georgia, serif;    
+    
+}
+
+.game-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.container {
+    max-width: 1250px;
+    padding: 0 60px;
+    margin: 0 auto;
+}
+
+.header {
+    padding: 90px 0;
+}
+
+.header_title {
+    text-align: center;
+    margin: 0;
+    color: #020200
+    ;
+}
+
+.game-section {
+    padding-top: 0px;
+}
+
+.gamesection_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.gameMenu_title{
+    margin: 0;
+    margin-bottom: 60px;
+    text-align: center;
+    color:  #000000
+    ;
+}
+
+.gameMenu_difficult-btn,
+.restart-btn {
+ font-size: 17px;
+ padding: 0.5em 2em;
+ border: transparent;
+ box-shadow: 2px 2px 4px rgba(95, 94, 94, 0.4);
+ background: rgb(7, 46, 31);
+ color: white;
+ border-radius: 10px;
+}
+
+.gameMenu_difficult-btn:not(:last-child) {
+    margin-bottom: 40px;
+}
+
+.gameMenu_difficult-btn,
+.restart-btn {
+    background: rgb(4, 112, 96);
+    background: linear-gradient(90deg, rgb(19, 60, 16) 0%, rgb(25, 124, 6) 100%);
+}
+
+.gameMenu_difficult-btn:hover {
+    transform: translate(0em, 0.2em);
+}
+
+.game-table {
+    max-width: 500px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.game-card {
+    width: 50px;
+    height: 100px;
+    flex: 0 0 23%;
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0297cd;
+    border-radius: 5px;
+    transition: all 0.2s linear;
+    margin: 1%;
+}
+
+.game-card i {
+    font-size: 40px;
+    display: none;
+}
+
+.game-card i+i {
+    display: block;
+}
+
+.game-card.flip {
+    background: #93ebf1 !important;
+    transform: perspective(100px) rotateY(180deg);
+}
+
+.game-card.flip i {
+    display: block;
+}
+
+.game-card.flip i+i {
+    display: none;
+}
+.game-card.successfully {
+    background: #3cf852 !important;
+}
+
+.game-card:hover {
+    background: #fdfdfb;
+}
+#score {
+    font-size: 50px;
+    color: #0f360b;
+    text-shadow: 2px 2px 8px #fff;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    padding: 10px;;
+}
+#clock {
+    position: absolute;
+    top: 4px;
+    right: 20px;
+    font-size: 3em;
+    color: #0f360b;
+    text-shadow: 2px 2px 8px #fff;
+    border-radius: 5px;
+    padding: 10px;
+}
