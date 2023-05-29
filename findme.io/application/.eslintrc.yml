@@ -1,0 +1,102 @@
+extends:
+  - airbnb
+parser: "@typescript-eslint/parser"
+parserOptions:
+  ecmaVersion: 2021
+plugins:
+  - react
+  - react-hooks
+env:
+  browser: true
+  es6: true
+  node: true
+globals:
+  PRODUCTION: false
+  JSX: true
+rules:
+  sort-imports: [2, {
+    "ignoreCase": false,
+    "ignoreDeclarationSort": true,
+    "ignoreMemberSort": false,
+    "memberSyntaxSortOrder": ["single", "multiple", "all", "none"],
+    "allowSeparatedGroups": true,
+  }]
+  no-with: off
+  no-unused-vars: off
+  no-empty-pattern: off
+  no-multiple-empty-lines: [2, { 'max': 1, 'maxBOF': 0, 'maxEOF': 0 }]
+  prefer-const: [2, { 'destructuring': all }]
+  no-path-concat: 2
+  global-require: 0
+  no-class-assign: 0
+  import/no-dynamic-require: 0
+  no-await-in-loop: 0
+  no-return-assign: 0
+  react/default-props-match-prop-types: 0
+  valid-typeof: 0
+  react/no-array-index-key: 0
+  no-restricted-syntax: 0
+  react/prop-types: 0
+  react/require-default-props: off
+  prefer-destructuring: off
+  space-before-function-paren: 0
+  react/no-unknown-property: off
+  react/jsx-uses-react: 2
+  react/jsx-uses-vars: 2
+  react/jsx-filename-extension: [1, { "extensions": [".tsx", ".ts"] }]
+  react/jsx-boolean-value: 2
+  react/jsx-fragments: 0
+  react/require-extension: 0
+  no-shadow:  off
+  react/jsx-props-no-spreading: off
+  react/forbid-prop-types: 0
+  react/jsx-first-prop-new-line: [2, 'multiline']
+  import/no-unresolved: 0
+  import/extensions: 0
+  no-nested-ternary: off
+  jsx-a11y/click-events-have-key-events: off
+  jsx-a11y/no-static-element-interactions: off
+  import/no-extraneous-dependencies: 0
+  no-underscore-dangle: off
+  camelcase: off
+  class-methods-use-this: off
+  generator-star-spacing: 0
+  no-warning-comments: 0
+  jsx-a11y/aria-props: 2
+  jsx-a11y/heading-has-content: 0
+  no-plusplus: 0
+  no-param-reassign: 0
+  jsx-a11y/label-has-for:
+    [
+      2,
+      {
+        'components': ['Label'],
+        'required': { 'some': ['nesting', 'id'] },
+        'allowChildren': false,
+      },
+    ]
+  jsx-a11y/mouse-events-have-key-events: 2
+  jsx-a11y/role-has-required-aria-props: 2
+  jsx-a11y/role-supports-aria-props: 2
+  jsx-a11y/anchor-is-valid:
+    [2, { 'components': ['Link'], 'specialLink': ['to'] }]
+  jsx-a11y/media-has-caption: 0
+  max-len: [0, { "code": 120 }]
+  object-curly-newline: 0
+  no-use-before-define: 0
+  implicit-arrow-linebreak: 0
+  no-console: off
+  arrow-body-style: off
+  operator-linebreak: 0
+  import/prefer-default-export: 0
+  react/no-unused-prop-types: off
+  react/button-has-type: off
+  experimentalDecorators: 0
+  react-hooks/rules-of-hooks: 'error'
+  react-hooks/exhaustive-deps: 'warn'
+  no-void: off
+  no-unused-expressions: [2, { allowTernary: true, allowShortCircuit: true }]
+overrides:
+  - files: '*.test.js'
+    rules:
+      react/jsx-props-no-spreading: 0

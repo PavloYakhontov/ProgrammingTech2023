@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "768854953536",
+    "project_id": "findmeio",
+    "storage_bucket": "findmeio.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:768854953536:android:7a9f9b23823516503f19a5",
+        "android_client_info": {
+          "package_name": "com.findmeio"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "768854953536-v9ier01uvapclaojn0jl36499ctn0mut.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.findmeio",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "768854953536-3t87a0nr1dsibgmusquipbdeon09ubib.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-vECK8bL2H2YhdrRTFSWon3yV4EoM3Z8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "768854953536-3t87a0nr1dsibgmusquipbdeon09ubib.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

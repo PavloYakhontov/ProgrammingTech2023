@@ -1,0 +1,81 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "src/assets/fonts/SFProText-Bold.ttf",
+      "sha1": "632e6cea171b276e5dd1f13b152c702fbf562cee"
+    },
+    {
+      "path": "src/assets/fonts/SFProText-BoldItalic.ttf",
+      "sha1": "bcc0ffef34f9ab3040ab258fe4d18d348327d39a"
+    },
+    {
+      "path": "src/assets/fonts/SFProText-Heavy.ttf",
+      "sha1": "bfc75c545dbe2a8c7c3d6d6223e42aaa5ccb9432"
+    },
+    {
+      "path": "src/assets/fonts/SFProText-HeavyItalic.ttf",
+      "sha1": "453fa152033f6dabeccd76acb8b233506a1fb900"
+    },
+    {
+      "path": "src/assets/fonts/SFProText-Light.ttf",
+      "sha1": "ecc8da32c2eac6044c807e945375180b7cda3a20"
+    },
+    {
+      "path": "src/assets/fonts/SFProText-LightItalic.ttf",
+      "sha1": "ba64b1f9682eaf3f690a32780f557c04d6e580bb"
+    },
+    {
+      "path": "src/assets/fonts/SFProText-Medium.ttf",
+      "sha1": "3b8df618cd23e83843b16a8a32de1ddc9de44df4"
+    },
+    {
+      "path": "src/assets/fonts/SFProText-MediumItalic.ttf",
+      "sha1": "ac53a637876a86217ad500f0046ac87ad37bd4c5"
+    },
+    {
+      "path": "src/assets/fonts/SFProText-Regular.ttf",
+      "sha1": "b4893462f2289df6978f9462a63db9e64bcc9342"
+    },
+    {
+      "path": "src/assets/fonts/SFProText-RegularItalic.ttf",
+      "sha1": "85063cfc8ebaa6d2605c794a41d23722bd508fc5"
+    },
+    {
+      "path": "src/assets/fonts/SFProText-Semibold.ttf",
+      "sha1": "9560ae412d73c7c9af72333db50464b4e597b0f9"
+    },
+    {
+      "path": "src/assets/fonts/SFProText-SemiboldItalic.ttf",
+      "sha1": "a0894273595c5a45a366bb4fbc045e7d82a9ba41"
+    },
+    {
+      "path": "src/assets/fonts/Sk-Modernist-Bold.otf",
+      "sha1": "601747e9fe6bbb14ddbb3b3d2eab4341c6431c36"
+    },
+    {
+      "path": "src/assets/fonts/Sk-Modernist-Bold.ttf",
+      "sha1": "fcfd92265079d429ef5c42596a9131270b07ee97"
+    },
+    {
+      "path": "src/assets/fonts/Sk-Modernist-Light.ttf",
+      "sha1": "6f7a3ddcbc0da936db0ed1475de59e2a5533c0f2"
+    },
+    {
+      "path": "src/assets/fonts/Sk-Modernist-Mono.otf",
+      "sha1": "906dae546d574a3363608a8992a11066cdb29149"
+    },
+    {
+      "path": "src/assets/fonts/Sk-Modernist-Mono.ttf",
+      "sha1": "556b05e2b54960746ba74bca7ed5ff204a2b0cf3"
+    },
+    {
+      "path": "src/assets/fonts/Sk-Modernist-Regular.otf",
+      "sha1": "ef74c972fd054800961b2da4053a1a1ee46f7174"
+    },
+    {
+      "path": "src/assets/fonts/Sk-Modernist-Regular.ttf",
+      "sha1": "11df479aaa7460381ddc3038478d804bad0b66c9"
+    }
+  ]
+}

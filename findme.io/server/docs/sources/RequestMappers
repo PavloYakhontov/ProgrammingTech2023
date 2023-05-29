@@ -1,0 +1,23 @@
+//Register
+{
+    "email": "zxczxc@abab.zxc",
+    "lastName": "Kokaiko",
+    "birthday": "1044239484000",
+    "firstName": "Eugene",
+    "country": "USA",
+    "city": "Detroit",
+    "password": "545444",
+    "phone": "+380505427102"
+}
+
+//Login
+{
+    "login": "zxczxc@abab.zxc",
+    "password": "545444",
+    "device_id": "ab85z12ifz"
+}
+
+//refresh
+{
+    "refresh_token": "token"
+}
