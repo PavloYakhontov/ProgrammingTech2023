@@ -257,28 +257,6 @@ window.onload = function () {
       }
     },
 
-    //для бекенду
-    str_board: function () {
-      ret = ""
-      for (let i in this.board) {
-        for (let j in this.board[i]) {
-          var found = false
-          for (let k of pieces) {
-            if (k.position[0] == i && k.position[1] == j) {
-              if (k.king) ret += (this.board[i][j] + 2)
-              else ret += this.board[i][j]
-              found = true
-              break
-            }
-          }
-          if (!found) ret += '0'
-        }
-      }
-      return ret
-    }
-  }
-
-
   Board.initalize();
   //ми клікаємо на елемент з класом .piece
   $('.piece').on("click", function () {//$(селектор).on(подія, функція обробки);
@@ -334,7 +312,7 @@ window.onload = function () {
             piece.move(tile);
             Board.changePlayerTurn()
           } else {
-            alert("You must jump when possible!");
+            alert("Ошибка в ході");
           }
         }
       }
